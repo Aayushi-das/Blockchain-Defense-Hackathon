@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Desert Storm:Website to prevent server attacks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-host-cloud.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+
+Host Cloud Template
+
+https://templatemo.com/tm-541-host-cloud
+
+-->
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>Desert<em>Storm</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">Known Attacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Recommended Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="functional-buttons">
+            <ul>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Heading Starts Here -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Known Attacks</h1>
+            <p><a href="index.html">Home</a> / <span>About Us</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Heading Ends Here -->
+
+
+    <!-- About Us Starts Here -->
+    <div class="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-image">
+              <img src="assets/images/our-team.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-content">
+              <div class="section-heading">
+                <h2>Known Attacks</h2>
+                <p>The following is a list of known attacks which you should be aware of, and defend against when writing smart contracts.</p>
+              </div>
+              <div id='tabs'>
+                  <ul>
+                    <li><a href='#tabs-1'>Reentrancy</a></li>
+                    <li><a href='#tabs-2'>Front-Running</a></li>
+                    <li><a href='#tabs-3'>TD</a></li>
+                    <li><a href='#tabs-4'>DoS</a></li>
+                  </ul>
+                  <section class='tabs-content'>
+                    <article id='tabs-1'>
+                      <p>One of the major dangers of calling external contracts is that they can take over the control flow, and make changes to your data that the calling function wasn't expecting. This class of bug can take many forms, and both of the major bugs that led to the DAO's collapse were bugs of this sort.</p>
+                      <img src="assets/images/problem 1.png" height="200px" width="500px"alt="">
+                    </article>
+                    <article id='tabs-2'>
+                      <p>Front-running, coined originally for traditional financial markets, is the race to order the chaos to the winners benefit. In financial markets, the flow of information gave birth to intermediaries that could simply profit by being the first to know and react to some information. These attacks mostly had been within stock market deals and early domain registries, such as whois gateways.</p>
+                      <img src="assets/images/problem 2.png" height="300px" width="600px" alt="">
+                    </article>
+                    <article id='tabs-3'>
+                      <p>Be aware that the timestamp of the block can be manipulated by the miner, and all direct and indirect uses of the timestamp should be considered.</p>
+                      <img src="assets/images/problem 3.png" height="300px" width="600px" alt="">
+                    </article>
+                    <article id='tabs-4'>
+                      <p>If attacker bids using a smart contract which has a fallback function that reverts any payment, the attacker can win any auction. When it tries to refund the old leader, it reverts if the refund fails. This means that a malicious bidder can become the leader while making sure that any refunds to their address will always fail. In this way, they can prevent anyone else from calling the bid() function, and stay the leader forever. A recommendation is to set up a pull payment system instead, as described earlier.</p>
+                      <img src="assets/images/problem 4.png" height="200px" width="500px" alt="">
+
+                    </article>
+                  </section>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Us Ends Here -->
+
+
+    <!-- Team Starts Here -->
+    <div class="team-section">
+      <div class="container">
+        <h1>Deprecated/historical attacks</h1>
+<p>These are attacks which are no longer possible due to changes in the protocol or improvements to solidity. They are recorded here for posterity and awareness.</p>
+<hr>
+        <h1>Other Vulnerabilities</h1>
+        <p>The Smart Contract Weakness Classification Registry offers a complete and up-to-date catalogue of known smart contract vulnerabilities and anti-patterns along with real-world examples. Browsing the registry is a good way of keeping up-to-date with the latest attacks.</p>
+      </div>
+
+    </div>
+    <!-- Team Ends Here -->
+
+
+    <!-- Testimonials Starts Here -->
+    <div class="testimonials-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>About us</h2>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <div class="owl-testimonials owl-carousel">
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"Our military strength is a prerequisite to peace, but let it be clear we maintain this strength in the hope it will never be used.That's how we strategize and work."</p>
+                <h4>Aayushi Das</h4>
+                <span>Founder</span>
+              </div>
+              <div class="testimonial-item">
+                <div class="icon">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+                <p>"None but an armed nation can dispense with a standing army. To keep ours armed and disciplined is therefore at all times important.Hence,helping the defences with some of the problems they are facing."</p>
+                <h4>Shrey Binduraj</h4>
+                <span>Co-Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Ends Here -->
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>About Us</h2>
+              </div>
+              <p>Desert Storm helps the military to overcome the difficulties they face in term of security.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Hosting Plans</h2>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#">Advanced Cloud</a></li>
+                <li><a href="#">Custom Designs</a></li>
+                <li><a href="#">Special Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Useful Links</h2>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#">Security Platform</a></li>
+                <li><a href="#">Light Speed Zone</a></li>
+                <li><a href="#">Content Delivery Network</a></li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>More Information</h2>
+              </div>
+              <ul class="footer-list">
+                <li>Phone: <a href="#">+91-6799779981</a></li>
+                <li>Email: <a href="#">mail@desorm.com</a></li>
+                <li>Support: <a href="#">support@desorm.com</a></li>
+                <li>Website: <a href="#">www.desertstorm.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="sub-footer">
+              <p>Copyright &copy; 2021 Desert Storms
+        - Designed by <a rel="nofollow" href="https://templatemo.com">Aayushi Das and Shrey Binduraj</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
